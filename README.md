@@ -1,1 +1,78 @@
-# STL
+# set
+要想合并两个set的内容，怎样做效率会比较高呢？
+set_union(s1.begin(),   s1.end(),   s2.begin(),   s2.end(),   inserter(s3));
+
+
+在序列中找出符合某谓词的第一个元素 find_if() 
+在序列中找出一子序列的最后一次出现的位置 find_end() 
+在序列中找出第一次出现指定值集中之值的位置 find_first_of() 
+在序列中找出相邻的一对值 adjacent_find() 
+计数 在序列中统计某个值出现的次数 count() 
+在序列中统计与某谓词匹配的次数 count_if() 
+比较 找出两个序列相异的第一个元素 mismatch() 
+两个序列中的对应元素都相同时为真
+在序列中找到等于某值的连续n次出现的位置 equal(a,a+n,b,cmp)
+equal_range(a,a+n,x) 
+搜索 在序列中找出一子序列的第一次出现的位置 search() 
+在序列中找出一值的连续n次出现的位置 search_n() 
+
+
+### 修改性序列操作（27个） 
+复制 从序列的第一个元素起进行复制 copy() 
+从序列的最后一个元素起进行复制 copy_backward() 
+交换 交换两个元素 swap() 
+交换指定范围的元素 swap_ranges() 
+交换由迭代器所指的两个元素 iter_swap() 
+变换 将某操作应用于指定范围的每个元素 transform() 
+替换 用一个给定值替换一些值 replace() 
+替换满足谓词的一些元素 replace_if() 
+复制序列时用一给定值替换元素 replace_copy() 
+复制序列时替换满足谓词的元素 replace_copy_if() 
+填充 用一给定值取代所有元素 fill() 
+用一给定值取代前n个元素 fill_n() 
+生成 用一操作的结果取代所有元素 generate() 
+用一操作的结果取代前n个元素 generate_n() 
+删除 删除具有给定值的元素 remove() 
+删除满足谓词的元素 remove_if() 
+复制序列时删除具有给定值的元素 remove_copy() 
+复制序列时删除满足谓词的元素 remove_copy_if() 
+唯一 删除相邻的重复元素 unique() 
+复制序列时删除相邻的重复元素 unique_copy() 
+反转 反转元素的次序 reverse(a,a+n) 
+复制序列时反转元素的次序 reverse_copy() 
+环移 循环移动元素 rotate(a,a+m,a+n)
+以m位置为界交换前后序列 
+复制序列时循环移动元素 rotate_copy() 
+随机 采用均匀分布来随机移动元素 random_shuffle() 
+划分 将满足某谓词的元素都放到前面 partition() 
+将满足某谓词的元素都放到前面并维持原顺序 stable_partition() 
+
+### 序列排序及相关操作（27个） 
+排序，并维持相同元素的原有顺序 stable_sort() 
+将序列的前一部分排好序 partial_sort() 
+复制的同时将序列的前一部分排好序 partial_sort_copy() 
+第n个元素 将第n各元素放到它的正确位置 nth_element() 
+二分检索 找到大于等于某值的第一次出现 lower_bound() 
+找到大于某值的第一次出现 upper_bound() 
+找到（在不破坏顺序的前提下）可插入给定值的最大范围 equal_range() 
+在有序序列中确定给定元素是否存在 binary_search() 
+归并 归并两个有序序列 merge() 
+归并两个接续的有序序列 inplace_merge() 
+有序结构上的集合操作 一序列为另一序列的子序列时为真 includes() 
+构造两个集合的有序并集 set_union() 
+构造两个集合的有序交集 set_intersection() 
+构造两个集合的有序差集 set_difference() 
+构造两个集合的有序对称差集（并-交） set_symmetric_difference() 
+堆操作 向堆中加入元素 push_heap() 
+从堆中弹出元素 pop_heap() 
+从序列构造堆 make_heap() 
+给堆排序 sort_heap() 
+最大和最小 两个值中较小的 min() 
+两个值中较大的 max() 
+序列中的最小元素 min_element(a,a+n) 
+序列中的最大元素 max_element() 
+词典比较 两个序列按字典序的第一个在前 lexicographical_compare() 
+排列生成器 按字典序的下一个排列 next_permutation() 
+按字典序的前一个排列 prev_permutation()
+
+
